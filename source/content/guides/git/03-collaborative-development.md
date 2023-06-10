@@ -14,6 +14,14 @@ audience: [development]
 product: [--]
 integration: [git]
 ---
+{
+    "name": "My Site",
+    "host": "appserver.dev.YOUR-SITE-UUID.drush.in",
+    "protocol": "sftp",
+    "port": 2222,
+    "username": "dev.LOGIN-UUID",
+    "uploadOnSave": true
+}
 
 Pantheon provides Git repositories for all sites on the platform. However, some teams might need an external repository hosted by a provider, like GitHub or Bitbucket, to function as the canonical version of the site's codebase. This section shows you how to use Pantheon with an external repository. The example below uses a GitHub account. However, the steps should be similar for any provider.
 
